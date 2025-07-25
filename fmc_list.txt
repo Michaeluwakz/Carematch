@@ -1,0 +1,24 @@
+Federal Medical Centre, Abeokuta, Ogun State
+Federal Medical Centre, Asaba, Delta State
+Federal Medical Centre, Azare, Bauchi State
+Federal Medical Centre, Bida, Niger State
+Federal Medical Centre, Birnin Kudu, Jigawa State
+Federal Medical Centre, Ebute Metta, Lagos State
+Federal Medical Centre, Epe, Lagos State
+Federal Medical Centre, Daura, Katsina State
+Federal Medical Centre, Gusau, Zamfara State
+Federal Medical Centre, Hong, Adamawa State
+Federal Medical Centre, Ikole-Ekiti, Ekiti State
+Federal Medical Centre, Jabi - Abuja, FCT
+Federal Medical Centre, Jalingo, Taraba State
+Federal Medical Centre, Keffi, Nasarawa State
+Federal Medical Centre, Makurdi, Benue State
+Federal Medical Centre, Misau, Bauchi State
+Federal Medical Centre, Mubi, Adamawa State
+Federal Medical Centre, New Bussa, Niger State
+Federal Medical Centre, Nguru, Yobe State
+Federal Medical Centre, Onitsha, Anambra State
+Federal Medical Centre, Owo, Ondo State
+Federal Medical Centre, Umuahia, Abia State
+Federal Medical Centre, Wase, Plateau State
+Federal Medical Centre, Yenagoa, Bayelsa State

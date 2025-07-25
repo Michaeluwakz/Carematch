@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+body.low-power *, body.low-power {
+  animation: none !important;
+  transition: none !important;
+  filter: grayscale(10%);
+  background-attachment: initial !important;
+}
+body.low-power {
+  background-color: #f9fafb !important;
+}
+
+@layer base {
+  :root {
+    --background: 206 67% 95%; /* #EBF4FA - Light Desaturated Blue */
+    --foreground: 215 28% 17%; /* Dark grayish blue for text */
+
+    --card: 206 60% 99%; /* Slightly off-white for cards */
+    --card-foreground: 215 28% 17%;
+
+    --popover: 206 60% 99%;
+    --popover-foreground: 215 28% 17%;
+
+    --primary: 206 70% 62%; /* #5DADE2 - Compassionate Blue */
+    --primary-foreground: 210 40% 98%; /* White */
+
+    --secondary: 206 50% 88%; /* Lighter shade of primary */
+    --secondary-foreground: 206 70% 40%; /* Darker blue for contrast on secondary */
+
+    --muted: 206 40% 92%; /* Even lighter, for less emphasis */
+    --muted-foreground: 206 30% 50%; /* Grayish blue */
+
+    --accent: 165 56% 77%; /* #A3E4D7 - Vibrant Green */
+    --accent-foreground: 165 60% 25%; /* Dark green/teal for contrast on accent */
+
+    --destructive: 0 72% 51%; /* Standard red */
+    --destructive-foreground: 0 0% 98%; /* White */
+
+    --border: 206 40% 85%; /* Subtle border color related to blues */
+    --input: 206 40% 88%; /* Input background */
+    --ring: 206 70% 62%; /* Same as primary for focus rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Sidebar variables - Retaining original structure but themed if used */
+    --sidebar-background: 206 60% 97%; /* Slightly darker than main bg */
+    --sidebar-foreground: 215 28% 25%;
+    --sidebar-primary: 206 70% 58%; /* Primary, slightly darker for sidebar context */
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 165 56% 80%; /* Accent, slightly lighter */
+    --sidebar-accent-foreground: 165 60% 20%;
+    --sidebar-border: 206 40% 80%;
+    --sidebar-ring: 206 70% 58%;
+  }
+
+  .dark {
+    --background: 215 28% 17%; /* Dark grayish blue */
+    --foreground: 206 67% 95%; /* Light blue */
+
+    --card: 215 28% 20%;
+    --card-foreground: 206 67% 95%;
+
+    --popover: 215 28% 20%;
+    --popover-foreground: 206 67% 95%;
+
+    --primary: 206 70% 62%; /* Compassionate Blue */
+    --primary-foreground: 210 40% 98%; /* White */
+
+    --secondary: 215 20% 30%; /* Darker muted blue */
+    --secondary-foreground: 206 60% 90%; /* Lighter blue */
+
+    --muted: 215 20% 25%;
+    --muted-foreground: 206 40% 70%;
+
+    --accent: 165 56% 77%; /* Vibrant Green */
+    --accent-foreground: 165 60% 25%; /* Dark green/teal */
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 35%;
+    --input: 215 20% 35%;
+    --ring: 206 70% 62%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 215 28% 15%;
+    --sidebar-foreground: 206 67% 92%;
+    --sidebar-primary: 206 70% 65%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 165 56% 70%;
+    --sidebar-accent-foreground: 165 60% 30%;
+    --sidebar-border: 215 20% 30%;
+    --sidebar-ring: 206 70% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
