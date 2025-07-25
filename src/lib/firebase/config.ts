@@ -15,7 +15,6 @@ const firebaseConfig = {
   storageBucket: "carematch-ai-sscu0.firebasestorage.app",
   messagingSenderId: "892914063910",
   appId: "1:892914063910:web:850d8e86ff7e8181e4a4e7"
-  measurementId: "1:892914063910:web:850d8e86ff7e8181e4a4e7"
 };
 
 // Initialize Firebase
