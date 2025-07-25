@@ -19,7 +19,6 @@ import {
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle, SheetDescription } from "@/components/ui/sheet"; 
 import * as React from "react";
-import { ThemeToggleButton } from './theme-toggle';
 import { useState, useEffect } from 'react';
 import EmergencyInfoCard from '@/components/ui/emergency-info-card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from '@/components/ui/dialog';
@@ -249,7 +248,6 @@ export function Header() {
           </div>
 
           <nav className="flex items-center gap-1 sm:gap-2">
-            <ThemeToggleButton />
             <button
               className={`ml-4 px-3 py-1 rounded border text-xs
                 ${lowPower
