@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { AppLayout } from '@/components/layout/app-layout';
 import { AuthProvider } from '@/contexts/auth-context';
-import { ThemeProvider } from "@/components/layout/theme-provider";
 import { PWAClient } from '@/components/layout/PWAClient';
 
 const geistSans = Geist({
@@ -27,38 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  var theme = localStorage.getItem('theme') || 'system';
-                  if (theme === 'system') {
-                    var mql = window.matchMedia('(prefers-color-scheme: dark)');
-                    theme = mql.matches ? 'dark' : 'light';
-                  }
-                  document.documentElement.className = theme;
-                } catch(e) {}
-              })();
-            `,
-          }}
-        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <PWAClient />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <AuthProvider>
-            <AppLayout>{children}</AppLayout>
-          </AuthProvider>
-        </ThemeProvider>
+        <AuthProvider>
+          <AppLayout>{children}</AppLayout>
+        </AuthProvider>
       </body>
     </html>
   );
